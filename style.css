@@ -15,22 +15,31 @@ header {
     flex-direction: column;
     background-color: rgb(81, 0, 255);
 
+
     .nav-links {
-        padding: 20px;
-    margin: 20px;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
     background-color: rgb(218, 218, 218);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
 
     img {
         width: 200px;
         height: auto;
     }
 
-    .ul {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
         display: flex;
         flex-direction: row;
         gap: 30px;
@@ -38,7 +47,7 @@ header {
 
     li {
         align-self: center;
-        list-style-type: none;
+        list-style: none;
 
         #contatos {
             border-bottom: solid 2px rgb(81, 0, 255);
@@ -76,7 +85,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 180px;
 
     
 
